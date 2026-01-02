@@ -1,0 +1,57 @@
+{
+  "comment": "Add new destinations by appending objects to the destinations array. Keep summaries non-spoiler and player-facing.",
+  "destinations": [
+    {
+      "id": "stoneward-archive",
+      "name": "Stoneward Archive",
+      "sigil": "A circle of stacked stones with a single open gap.",
+      "duration_tier": "Tier I",
+      "commitment_warning": "Expect to be committed for a full session once you exit.",
+      "replay_state": "one-and-done",
+      "briefing_summary": "A sealed archive that answers a single question for those who endure its trials.",
+      "tone": "Measured, investigative, with quiet tension.",
+      "danger_level": "Low to moderate hazards; more puzzle than peril.",
+      "story_type": "A focused expedition with a clear objective and a clean return.",
+      "duration_detail": "Tier I adventures are designed to resolve in one session."
+    },
+    {
+      "id": "ember-signal",
+      "name": "Ember Signal",
+      "sigil": "Three rising lines over a small ember mark.",
+      "duration_tier": "Tier II",
+      "commitment_warning": "Once you exit, return is likely only after the arc concludes.",
+      "replay_state": "altered",
+      "briefing_summary": "Respond to a distant call and decide whether it is warning, invitation, or trap.",
+      "tone": "Urgent and atmospheric with shifting alliances.",
+      "danger_level": "Moderate threats with occasional spikes of risk.",
+      "story_type": "A two-to-three session arc with branching outcomes.",
+      "duration_detail": "Tier II adventures usually take two to three sessions."
+    },
+    {
+      "id": "glass-meadow",
+      "name": "Glass Meadow",
+      "sigil": "A clean blade of grass mirrored above a horizontal line.",
+      "duration_tier": "Tier I",
+      "commitment_warning": "Exiting commits the party for the rest of the session.",
+      "replay_state": "altered",
+      "briefing_summary": "A fragile landscape that rewrites its layout with each visit.",
+      "tone": "Wonder mixed with unease and careful navigation.",
+      "danger_level": "Low danger; environmental pressures and time limits.",
+      "story_type": "A self-contained outing that can be revisited with changes.",
+      "duration_detail": "Tier I adventures are designed to resolve in one session."
+    },
+    {
+      "id": "wardens-passage",
+      "name": "Warden's Passage",
+      "sigil": "An arched gate set within a vertical spine of lines.",
+      "duration_tier": "Tier III",
+      "commitment_warning": "Once you exit, the return window may close until the full arc is complete.",
+      "replay_state": "persistent",
+      "briefing_summary": "A long-form mission that establishes an ongoing connection to the wider network.",
+      "tone": "Grave, procedural, and heavy with consequence.",
+      "danger_level": "High stakes with sustained pressure across multiple sessions.",
+      "story_type": "A four-to-six session mini-campaign with lasting effects.",
+      "duration_detail": "Tier III adventures span four to six sessions and may reshape later routes."
+    }
+  ]
+}

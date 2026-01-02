@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-page="detail">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Briefing | Thelore</title>
+    <link rel="stylesheet" href="../css/transit.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 data-destination-name>Destination Briefing</h1>
+        <p>
+          This page is the last safe room before commitment. Review the briefing, then decide
+          whether to exit the transit.
+        </p>
+        <div class="nav-links">
+          <a class="button-link" href="index.html">Back to Destinations</a>
+          <a class="button-link" href="../">Back to Transit Hub</a>
+        </div>
+      </header>
+
+      <p data-error class="callout warning"></p>
+
+      <section class="state-banner">
+        <strong>Still in Transit.</strong> You are not committed while you remain here.
+      </section>
+
+      <section class="detail-card">
+        <h2>Sigil</h2>
+        <p data-destination-sigil></p>
+      </section>
+
+      <section class="detail-grid">
+        <article class="detail-card">
+          <h3>Tone</h3>
+          <p data-destination-tone></p>
+        </article>
+        <article class="detail-card">
+          <h3>Danger Level</h3>
+          <p data-destination-danger></p>
+        </article>
+        <article class="detail-card">
+          <h3>Story Type</h3>
+          <p data-destination-story></p>
+        </article>
+        <article class="detail-card">
+          <h3>Duration Tier</h3>
+          <p data-destination-duration></p>
+          <p data-destination-duration-detail></p>
+        </article>
+        <article class="detail-card">
+          <h3>Replay State</h3>
+          <p data-destination-replay></p>
+        </article>
+        <article class="detail-card">
+          <h3>Commitment Warning</h3>
+          <p data-destination-commitment></p>
+        </article>
+      </section>
+
+      <section class="callout">
+        <strong>Briefing Summary</strong>
+        <p data-destination-summary></p>
+      </section>
+
+      <div class="threshold">Threshold</div>
+
+      <section class="callout warning">
+        <strong>Commitment Begins After Exit</strong>
+        <p>Once you exit the transit, return may be restricted.</p>
+        <p>
+          Crossing the threshold signals the choice is locked-in for the duration listed above.
+        </p>
+      </section>
+
+      <section data-destination-fallback hidden class="callout warning">
+        <strong>Destination Not Found</strong>
+        <p>Please return to the destination list and select a valid route.</p>
+      </section>
+
+      <p class="footer-note">
+        Keep this briefing spoiler-free. Only the destination data file should be edited to add new
+        routes.
+      </p>
+    </main>
+    <script src="../js/transit.js"></script>
+  </body>
+</html>
