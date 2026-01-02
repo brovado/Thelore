@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departure Board | Player Portal</title>
+  <link rel="stylesheet" href="../../assets/css/site.css" />
+  <script src="../../assets/js/nav.js" defer></script>
+  <script src="../../assets/js/site.js" defer></script>
+</head>
+<body data-current="players/transit/departure-board.html">
+  <header class="site-header site-header--portal">
+    <div class="site-title">Thelore</div>
+    <div class="site-subtitle">Thel’aranor Gate — Saint Lore Hub</div>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="../../index.html" data-nav-link>Home</a>
+      <a href="../index.html" data-nav-link>Player Portal</a>
+      <a href="../destinations/index.html" data-nav-link>Destinations</a>
+      <a href="../tools/index.html" data-nav-link>Tools</a>
+      <button class="tv-toggle" type="button" data-tv-toggle>TV Mode</button>
+    </nav>
+  </header>
+  <div class="site-body">
+    <nav class="sidebar" aria-label="Player Portal">
+      <div class="nav-section">
+        <h2>Player Portal</h2>
+        <ul>
+          <li><a href="../getting-started.html" data-nav-link>Getting Started</a></li>
+          <li><a href="../world/overview.html" data-nav-link>World Overview</a></li>
+          <li><a href="../factions/index.html" data-nav-link>Factions</a></li>
+          <li><a href="../chapters/chapter-1.html" data-nav-link>Chapters</a></li>
+          <li><a href="index.html" data-nav-link>Transit Hub</a></li>
+          <li><a href="../tools/index.html" data-nav-link>Tools</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="content content--wide">
+      <div class="content-inner">
+        <header class="page-header">
+          <h1>Thel’aranor Gate — Saint Lore Hub</h1>
+          <p>Western Line Activation Feed v0.1</p>
+        </header>
+
+        <section class="section-content">
+          <p>Use the embedded board below or open it directly in a new tab.</p>
+          <p><a class="btn" href="../../tools/departure_board.html">Open full departure board</a></p>
+        </section>
+
+        <section class="section-content">
+          <iframe
+            title="Departure Board"
+            src="../../tools/departure_board.html"
+            style="width: 100%; min-height: 720px; border: none; border-radius: 16px; box-shadow: 0 8px 20px rgba(16, 28, 38, 0.12);"
+          ></iframe>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

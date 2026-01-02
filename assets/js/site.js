@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navContainer = document.getElementById("site-nav");
   if (!navContainer || typeof siteNav === "undefined") {
+    const tvToggle = document.querySelector("[data-tv-toggle]");
+    if (tvToggle) {
+      tvToggle.addEventListener("click", () => {
+        document.body.classList.toggle("tv-mode");
+      });
+    }
     return;
   }
 
@@ -40,4 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   navContainer.appendChild(renderSection("Wiki", siteNav.wiki));
   navContainer.appendChild(renderSection("Tools", siteNav.tools));
+
+  const tvToggle = document.querySelector("[data-tv-toggle]");
+  if (tvToggle) {
+    tvToggle.addEventListener("click", () => {
+      document.body.classList.toggle("tv-mode");
+    });
+  }
 });

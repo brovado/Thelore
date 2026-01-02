@@ -1,9 +1,9 @@
 const siteNav = {
   primary: [
     { title: "Home", path: "index.html" },
-    { title: "Chapters", path: "chapters/index.html" },
-    { title: "Tools", path: "tools/index.html" },
-    { title: "Site Map", path: "index.html#site-map" }
+    { title: "Player Portal", path: "players/index.html" },
+    { title: "Destinations", path: "players/destinations/index.html" },
+    { title: "Tools", path: "players/tools/index.html" }
   ],
   chapters: [
     { title: "Chapter 1 — Canon Summary", path: "chapters/chapter-1-canon-summary.html" },
@@ -23,3 +23,20 @@ const siteNav = {
     { title: "Departure Board", path: "tools/departure_board.html" }
   ]
 };
+
+const highlightActiveLinks = () => {
+  const current = document.body?.dataset?.current || "";
+  const currentPath = current ? `/${current}` : window.location.pathname;
+
+  document.querySelectorAll("a[data-nav-link]").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    const resolvedPath = new URL(href, window.location.href).pathname;
+    const sectionPath = resolvedPath.replace(/index\\.html$/, "");
+
+    if (currentPath === resolvedPath || (sectionPath && currentPath.startsWith(sectionPath))) {
+      link.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("load", highlightActiveLinks);
