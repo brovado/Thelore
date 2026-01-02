@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-page="list">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transit Destinations | Thelore</title>
+    <link rel="stylesheet" href="../css/transit.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Available Destinations</h1>
+        <p>
+          Browse the safe briefings below. Each entry lists duration and replay state without
+          spoilers.
+        </p>
+        <div class="nav-links">
+          <a class="button-link" href="../">Back to Transit Hub</a>
+          <a class="button-link" href="../../wiki/">Return to the Wiki</a>
+        </div>
+      </header>
+
+      <p data-error class="callout warning"></p>
+
+      <!--
+        To add a new destination, edit transit/data/destinations.json only.
+        The list below is rendered automatically from that file.
+      -->
+      <section class="destinations-grid" data-destination-list></section>
+    </main>
+    <script src="../js/transit.js"></script>
+  </body>
+</html>
