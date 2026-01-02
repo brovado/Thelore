@@ -123,13 +123,13 @@
                 <li>Choose a Background: Decide on a background that adds depth to your character.</li>
                 <li>Select Skills and Equipment: Pick skills and starting equipment.</li>
                 <li>Finalize Details: Add personality traits, alignment, and other details.</li>
-                <li><a  href="http://159.203.110.60/andrew/personal/dnd/character_creation.php">Generate</a> backstory: use the generate backstory template below to get a foundation for your players backstory.</li>
+                <li><a href="character_creation.html">Generate</a> backstory: use the generate backstory template below to get a foundation for your players backstory.</li>
 
             </ol>
         </section>
 
         <section class="cta">
-            <a href="http://159.203.110.60/andrew/personal/dnd/character_creation.php" class="btn">Generate backstory</a>
+            <a href="character_creation.html" class="btn">Generate backstory</a>
         </section>                </div>
         <!-- Planet Information Section -->
 <div id="section1" class="section-content">
@@ -156,8 +156,8 @@
 
 
 
-<a href="#" onclick="window.open('https://azgaar.github.io/Fantasy-Map-Generator/?maplink=https://raw.githubusercontent.com/brovado/Thelore/main/Thelore%202024-08-10-15-27.map', '_blank', 'width=1300,height=600'); return false;">Open Interactive Map in New Window</a>
-    <img src="http://159.203.110.60/andrew/personal/dnd/Thelore/media/Thelore%202024-08-10-22-42.jpeg" alt="Thelore Map" style="display:block; margin-top:20px; width:100%;">
+<a href="#" onclick="const mapUrl = new URL('../assets/maps/Thelore%202024-08-10-15-27.map', window.location.href).href; window.open(`https://azgaar.github.io/Fantasy-Map-Generator/?maplink=${encodeURIComponent(mapUrl)}`, '_blank', 'width=1300,height=600'); return false;">Open Interactive Map in New Window</a>
+    <img src="../assets/img/Designer%20(3).jpeg" alt="Thelore Map" style="display:block; margin-top:20px; width:100%;">
 
 
 
@@ -1264,7 +1264,7 @@ He is also associated with misery and youth. He is often worshipped by wanderers
 
         <div id="section11" class="section-content">
 <h1>Calander</h1>
-<a href="http://159.203.110.60/andrew/personal/dnd/Thelore/world_calander.html">Calander </a>
+<a href="world_calander.html">Calander </a>
     </div>
 
 <div id="section12" class="section-content">
@@ -1617,7 +1617,7 @@ He is also associated with misery and youth. He is often worshipped by wanderers
     </div>
 
     <!-- Include world_info.js -->
-    <script src="world_info.js"></script>
+    <script src="../assets/js/world_info.js"></script>
 
 </body>
 </html>
