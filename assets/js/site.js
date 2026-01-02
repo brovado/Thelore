@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navContainer.innerHTML = "";
   navContainer.appendChild(renderSection("Navigate", siteNav.primary));
+  if (siteNav.chapters) {
+    navContainer.appendChild(renderSection("Chapters", siteNav.chapters));
+  }
   navContainer.appendChild(renderSection("Wiki", siteNav.wiki));
   navContainer.appendChild(renderSection("Tools", siteNav.tools));
 });
