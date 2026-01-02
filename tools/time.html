@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thelore Time Tracker</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script src="../assets/js/nav.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body data-root="../" data-current="tools/time.html">
+  <header class="site-header">
+    <div class="site-title">Thelore</div>
+    <div class="site-subtitle">Time Tracker</div>
+  </header>
+  <div class="site-body">
+    <nav class="sidebar" id="site-nav"></nav>
+    <main class="content content--wide">
+      <div class="content-inner">
+        <header class="page-header">
+          <h1>Time of Day Tracker</h1>
+          <p>Advance the clock and keep your current in-world date visible.</p>
+        </header>
+
+        <div class="tool-time">
+          <div class="output-group">
+            <strong>Current Date:</strong>
+            <h1 id="submittedDate" class="text-centered">Day: - Week: - Month: - Year: -</h1>
+          </div>
+          <div id="timeLine">
+            <div id="sun"></div>
+          </div>
+
+          <div>
+            <button onclick="progressTime(1)">+15 Min</button>
+            <button onclick="progressTime(2)">+30 Min</button>
+            <button onclick="progressTime(4)">+1 Hour</button>
+          </div>
+
+          <div class="date-container">
+            <div class="input-group">
+              <label for="inputDay">Day:</label>
+              <input type="text" id="inputDay" placeholder="Day" />
+              <label for="inputWeek">Week:</label>
+              <select id="inputWeek">
+                <option value="Traxday">Traxday</option>
+                <option value="Voyday">Voyday</option>
+                <option value="Wayday">Wayday</option>
+                <option value="Crossday">Crossday</option>
+                <option value="Restday">Restday</option>
+              </select>
+              <label for="inputMonth">Month:</label>
+              <input type="text" id="inputMonth" placeholder="Month" />
+              <label for="inputYear">Year:</label>
+              <input type="text" id="inputYear" placeholder="Year" />
+              <button onclick="updateDate()">Update Date</button>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="column">
+              <h2>Info Graphics</h2>
+              <div class="image-list">
+                <a href="../assets/img/Factions%20Handout.png" target="_blank">Factions</a>
+                <a href="world_calendar.html">World Calendar</a>
+                <a href="../assets/img/Traveling%20template%20(2).png" target="_blank">Travaling</a>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2>Places</h2>
+              <div class="image-list">
+                <a href="../assets/img/Arcane%20District.png" target="_blank">Arcane District</a>
+                <a href="../assets/img/Verdant%20Grove%202.png" target="_blank">Verdant Grove</a>
+                <a href="../assets/img/Heart%20District%201.png" target="_blank">Heart District</a>
+              </div>
+            </div>
+
+            <div class="column">
+              <h2>People</h2>
+              <div class="image-list">
+                <a href="../assets/img/Kaelith.png" target="_blank">Kaelith Silverwind</a>
+                <a href="../assets/img/Alchemist%20Sage%20Greenleaf.png" target="_blank">Alchemist Sage Greenleaf</a>
+                <a href="../assets/img/Thorn%20%20Ironshield.png" target="_blank">Captain Thorn Ironshield</a>
+                <a href="../assets/img/rehal_tavernkeep.jpg" target="_blank">Rehal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const totalBlocks = 96; // 96 intervals of 15 minutes in a day
+    let currentTimeIndex = 0;
+
+    function updateSunPosition() {
+      const sun = document.getElementById('sun');
+      const percentage = (currentTimeIndex / totalBlocks) * 100;
+      sun.style.left = `calc(${percentage}% - 15px)`;
+
+      sun.classList.remove('morning', 'afternoon', 'evening', 'night');
+      if (currentTimeIndex < 24) {
+        sun.classList.add('morning');
+      } else if (currentTimeIndex < 48) {
+        sun.classList.add('afternoon');
+      } else if (currentTimeIndex < 72) {
+        sun.classList.add('evening');
+      } else {
+        sun.classList.add('night');
+      }
+    }
+
+    function progressTime(blocks) {
+      currentTimeIndex = (currentTimeIndex + blocks) % totalBlocks;
+      updateSunPosition();
+    }
+
+    function updateDate() {
+      const day = document.getElementById('inputDay').value || '-';
+      const week = document.getElementById('inputWeek').value || '-';
+      const month = document.getElementById('inputMonth').value || '-';
+      const year = document.getElementById('inputYear').value || '-';
+      document.getElementById('submittedDate').textContent = `Day: ${day} Week: ${week} Month: ${month} Year: ${year}`;
+    }
+
+    updateSunPosition();
+  </script>
+</body>
+</html>

@@ -1,109 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiki Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        min-height: 100vh;
-    }
-    #side-nav {
-        width: 250px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background-color: #343a40;
-        padding-top: 20px;
-    }
-    #side-nav a {
-        color: #ffffff;
-        padding: 10px 15px;
-        text-decoration: none;
-        display: block;
-    }
-    #side-nav a:hover {
-        background-color: #495057;
-    }
-    #content {
-        margin-left: 250px;
-        padding: 20px;
-        width: 100%;
-    }
-    .section-content {
-        display: none;
-    }
-    .external-link-btn {
-        margin-top: 20px;
-        display: block;
-    }
-    h2 {
-        text-align: center;
-        border-bottom: solid;
-    }
-    h3 {
-        padding-top: 20px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    /* Media query for mobile devices */
-    @media (max-width: 767px) {
-        body {
-            flex-direction: column;
-        }
-        #side-nav {
-            position: relative;
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        #content {
-            margin-left: 0;
-        }
-    }
-            table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thelore Wiki — World Information</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script src="../assets/js/nav.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
 </head>
-<body>
+<body data-root="../" data-current="wiki/world_info.html">
+  <header class="site-header">
+    <div class="site-title">Thelore</div>
+    <div class="site-subtitle">Campaign Wiki</div>
+  </header>
+  <div class="site-body">
+    <nav class="sidebar" id="site-nav"></nav>
+    <main class="content">
+      <div class="content-inner">
+        <header class="page-header">
+          <h1>World Information</h1>
+          <p>Browse the current lore for Thelore and jump to key sections below.</p>
+        </header>
+        <nav class="page-nav" aria-label="World information sections">
+          <a href="#landing">Welcome</a>
+          <a href="#section1">World Information</a>
+          <a href="#section2">Deities</a>
+          <a href="#section4">Organizations</a>
+          <a href="#section5">Player Information</a>
+          <a href="#section8">Places</a>
+          <a href="#section10">Inhouse Rules</a>
+          <a href="#section11">Calendar</a>
+          <a href="#section12">Jugor's Rest</a>
+        </nav>
 
-
-<div id="side-nav">
-    <h2 class="text-centered" style="color: white;">   <a href="#landing" onclick="showSection('landing')" >Thelore</a></h2>
-    <a href="#section1" onclick="showSection('section1')" >World Information</a>
-    <a href="#section2" onclick="showSection('section2')">Deities</a>
-    <!-- <a href="#section3" onclick="showSection('section3')">Civilizations</a> -->
-    <a href="#section4" onclick="showSection('section4')">Organizations</a>
-    <a href="#section5" onclick="showSection('section5')">Player Information</a>
-    <!-- <a href="#section6" onclick="showSection('section6')">People</a> -->
-    <!-- <a href="#section7" onclick="showSection('section7')">Mercenaries</a>   -->
-    <a href="#section8" onclick="showSection('section8')">Places</a>
-    <!-- <a href="#section9" onclick="showSection('section9')">Dragon Marks</a>           -->
-    <a href="#section10" onclick="showSection('section10')">Inhouse Rules</a>          
-    <a href="#section11" onclick="showSection('section11')">Calendar</a>          
-    <a href="#section12" onclick="showSection('section12')">Jugor's Rest</a>          
-
-    <a href="https://rpgbot.net/2024-dnd-5e-transition-guide-and-change-log-everything-thats-different-in-the-new-players-handbook/" target="_blank" class="external-link-btn btn btn-primary">Latest D&D 5.5 Rule Changes</a>
-</div>
-<div id="content">
+        <div class="notice">
+          <strong>Reference:</strong>
+          <a href="https://rpgbot.net/2024-dnd-5e-transition-guide-and-change-log-everything-thats-different-in-the-new-players-handbook/" target="_blank" rel="noreferrer">
+            Latest D&amp;D 5.5 Rule Changes
+          </a>
+        </div>
 
                 <div id="landing" class="section-content">
                     
@@ -1264,7 +1199,7 @@ He is also associated with misery and youth. He is often worshipped by wanderers
 
         <div id="section11" class="section-content">
 <h1>Calander</h1>
-<a href="http://159.203.110.60/andrew/personal/dnd/Thelore/world_calander.html">Calander </a>
+<a href="../tools/world_calendar.html">Calendar</a>
     </div>
 
 <div id="section12" class="section-content">
@@ -1608,26 +1543,8 @@ He is also associated with misery and youth. He is often worshipped by wanderers
      -->
 </div>
 
-
-
-
-
-
-
-    </div>
-
-    <!-- Include world_info.js -->
-    <script src="world_info.js"></script>
-
+      </div>
+    </main>
+  </div>
 </body>
 </html>
-
-
-
-
-<!-- 
-to add to character generator
-When I reached adolescence a strange mark appeared on my body, which gifted me with remarkable abilities. The mark that manifested on me is the Mark of (Blank), the symbol of House (blank)
-
-
- -->
