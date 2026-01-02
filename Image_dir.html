@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organized Image Columns</title>
+    <style>
+        body {
+            background-image: url('https://your-background-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+        h2 {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        .image-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .image-list a img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .image-list a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Column for Slideshows -->
+        <div class="column">
+            <h2>Info Graphics</h2>
+            <div class="image-list">
+                
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/d3d5a3092940b3a4cfff194777bac1e3045a003e/Factions%20Handout.png" target="_blank">Factions</a>
+
+<!--                 <a href="slideshow1-fullsize.jpg" target="_blank"><img src="slideshow1-thumbnail.jpg" alt="Slideshow 1"></a>
+                <a href="slideshow2-fullsize.jpg" target="_blank"><img src="slideshow2-thumbnail.jpg" alt="Slideshow 2"></a>
+                <a href="slideshow3-fullsize.jpg" target="_blank"><img src="slideshow3-thumbnail.jpg" alt="Slideshow 3"></a> -->
+                <!-- Add more slideshows as needed -->
+            </div>
+        </div>
+
+        <!-- Column for Places -->
+        <div class="column">
+            <h2>Places</h2>
+            <div class="image-list">
+                <a href="https://github.com/brovado/Thelore/raw/main/Arcane%20District.png" target="_blank">Arcane District</a>
+                <a href="https://github.com/brovado/Thelore/raw/main/Verdant%20Grove%202.png" target="_blank">Verdant Grove</a>
+                <a href="https://github.com/brovado/Thelore/blob/main/Heart%20District%201.png" target="_blank">Heart District</a>
+                <!-- Add more places as needed -->
+            </div>
+        </div>
+
+        <!-- Column for People -->
+        <div class="column">
+            <h2>People</h2>
+            <div class="image-list">
+                <a href="https://github.com/brovado/Thelore/raw/d3d5a3092940b3a4cfff194777bac1e3045a003e/Kaelith.png" target="_blank">Kaelith Silverwind</a>
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/d3d5a3092940b3a4cfff194777bac1e3045a003e/Alchemist%20Sage%20Greenleaf.png" target="_blank">Alchemist Sage Greenleaf</a>
+                <a href="phttps://raw.githubusercontent.com/brovado/Thelore/main/Thorn%20%20Ironshield.png" target="_blank">Captain Thorn Ironshield</a>
+                <!-- Add more people as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

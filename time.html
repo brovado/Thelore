@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time of Day Indicator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        #timeLine {
+            width: 80%;
+            height: 20px;
+            background-color: lightgray;
+            position: relative;
+            margin: 140px 0;
+            border-radius: 10px;
+
+        }
+#sun {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -64px;
+    left: 0;
+    background: radial-gradient(circle at center, #FFD700, #FFA500);
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.8), 0 0 60px rgba(255, 223, 0, 0.5);
+    transition: left 0.5s ease, background 1s ease, box-shadow 1s ease;
+}
+
+#sun.morning {
+    background: radial-gradient(circle at center, #2e2e2e, #4b4b4b, #000); /* Night: Gradual transition from gray to black */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+#sun.afternoon {
+    background: radial-gradient(circle at center, #FFFACD, #FFD700, #FFA500); /* Golden sun with soft yellow tones */
+    box-shadow: 0 0 40px rgba(255, 223, 0, 0.8), 0 0 80px rgba(255, 223, 0, 0.5);
+}
+
+#sun.evening {
+    background: radial-gradient(circle at center, #FFA500, #FF6347, #FF4500); /* Orange to reddish-orange transition */
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.8), 0 0 60px rgba(255, 165, 0, 0.5);
+}
+
+#sun.night {
+    background: radial-gradient(circle at center, #FF4500, #8B0000, #4B0082); /* Reddish to dark purple for night */
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.5);
+}
+
+/* Optional Animation for smooth transitions between classes */
+@keyframes sunTransition {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
+    100% { filter: brightness(1); }
+}
+
+#sun {
+    animation: sunTransition 3s ease-in-out infinite alternate;
+}
+
+        .date-container {
+            margin-top: 20px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .output-group {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        input[type="text"] {
+            margin-right: 10px;
+            width: 100px;
+        }
+                .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+                .image-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .image-list a img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .image-list a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+        <div class="output-group">
+            <strong>Current Date:</strong>
+            <h1 id="submittedDate" class="text-centered">Day: - Week: - Month: - Year: -</h1>
+        </div>
+    <div id="timeLine">
+        <div id="sun"></div>
+    </div>
+
+    <div>
+        <button onclick="progressTime(1)">+15 Min</button>
+        <button onclick="progressTime(2)">+30 Min</button>
+        <button onclick="progressTime(4)">+1 Hour</button>
+    </div>
+
+    <div class="date-container">
+        <div class="input-group">
+            <label for="inputDay">Day:</label>
+            <input type="text" id="inputDay" placeholder="Day">
+            <label for="inputWeek">Week:</label>
+<select id="inputWeek">
+    <option value="Traxday">Traxday</option>
+    <option value="Voyday">Voyday</option>
+    <option value="Wayday">Wayday</option>
+    <option value="Crossday">Crossday</option>
+    <option value="Restday">Restday</option>
+</select>
+            <label for="inputMonth">Month:</label>
+            <input type="text" id="inputMonth" placeholder="Month">
+            <label for="inputYear">Year:</label>
+            <input type="text" id="inputYear" placeholder="Year">
+            <button onclick="updateDate()">Update Date</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <!-- Column for Slideshows -->
+        <div class="column">
+            <h2>Info Graphics</h2>
+            <div class="image-list">
+                
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/d3d5a3092940b3a4cfff194777bac1e3045a003e/Factions%20Handout.png" target="_blank">Factions</a>
+                <a href="http://159.203.110.60/andrew/personal/dnd/Thelore/world_calander.html" target="_blank">World Calander</a>
+                <a href="https://github.com/brovado/Thelore/raw/main/Traveling%20template%20(2).png" target="_blank">Travaling</a>
+<!--                 <a href="slideshow1-fullsize.jpg" target="_blank"><img src="slideshow1-thumbnail.jpg" alt="Slideshow 1"></a>
+                <a href="slideshow2-fullsize.jpg" target="_blank"><img src="slideshow2-thumbnail.jpg" alt="Slideshow 2"></a>
+                <a href="slideshow3-fullsize.jpg" target="_blank"><img src="slideshow3-thumbnail.jpg" alt="Slideshow 3"></a> -->
+                <!-- Add more slideshows as needed -->
+            </div>
+        </div>
+
+        <!-- Column for Places -->
+        <div class="column">
+            <h2>Places</h2>
+            <div class="image-list">
+                <a href="https://github.com/brovado/Thelore/raw/main/Arcane%20District.png" target="_blank">Arcane District</a>
+                <a href="https://github.com/brovado/Thelore/raw/main/Verdant%20Grove%202.png" target="_blank">Verdant Grove</a>
+                <a href="https://github.com/brovado/Thelore/blob/main/Heart%20District%201.png" target="_blank">Heart District</a>
+                <!-- Add more places as needed -->
+            </div>
+        </div>
+
+        <!-- Column for People -->
+        <div class="column">
+            <h2>People</h2>
+            <div class="image-list">
+                <a href="https://github.com/brovado/Thelore/raw/d3d5a3092940b3a4cfff194777bac1e3045a003e/Kaelith.png" target="_blank">Kaelith Silverwind</a>
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/d3d5a3092940b3a4cfff194777bac1e3045a003e/Alchemist%20Sage%20Greenleaf.png" target="_blank">Alchemist Sage Greenleaf</a>
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/main/Thorn%20%20Ironshield.png" target="_blank">Captain Thorn Ironshield</a>
+                <a href="https://raw.githubusercontent.com/brovado/Thelore/main/rehal_tavernkeep.jpg" target="_blank">Rehal</a>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        const totalBlocks = 96; // 96 intervals of 15 minutes in a day
+        let currentTimeIndex = 0;
+
+        // Function to update the sun's position and color based on the current time index
+        function updateSunPosition() {
+            const sun = document.getElementById('sun');
+            const percentage = (currentTimeIndex / totalBlocks) * 100;
+            sun.style.left = `calc(${percentage}% - 15px)`; // Move the sun along the timeline
+
+            // Change sun color based on time of day
+            sun.classList.remove('morning', 'afternoon', 'evening', 'night');
+            if (currentTimeIndex < 24) {
+                sun.classList.add('morning');  // Midnight to 6 AM
+            } else if (currentTimeIndex < 48) {
+                sun.classList.add('afternoon'); // 6 AM to Noon
+            } else if (currentTimeIndex < 72) {
+                sun.classList.add('evening');  // Noon to 6 PM
+            } else {
+                sun.classList.add('night');    // 6 PM to Midnight
+            }
+
+            // Save the current time index to cookies
+            document.cookie = `currentTimeIndex=${currentTimeIndex};path=/;`;
+        }
+
+        // Function to progress time by the specified number of intervals
+        function progressTime(interval) {
+            currentTimeIndex = (currentTimeIndex + interval) % totalBlocks;
+            updateSunPosition();
+        }
+
+        // Function to update the submitted date display based on the input fields
+        function updateDate() {
+            const day = document.getElementById('inputDay').value;
+            const week = document.getElementById('inputWeek').value;
+            const month = document.getElementById('inputMonth').value;
+            const year = document.getElementById('inputYear').value;
+
+            // Update the display area with the input values
+            const submittedDate = `${day} ${week}  ${month}  ${year}`;
+            document.getElementById('submittedDate').innerText = submittedDate;
+
+            // Save the input values to cookies
+            document.cookie = `inGameDay=${day};path=/;`;
+            document.cookie = `inGameWeek=${week};path=/;`;
+            document.cookie = `inGameMonth=${month};path=/;`;
+            document.cookie = `inGameYear=${year};path=/;`;
+        }
+
+        // Function to get a cookie value by name
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // Load saved state from cookies on page load
+        window.onload = function() {
+            // Get saved time index
+            const savedTimeIndex = getCookie('currentTimeIndex');
+            if (savedTimeIndex) {
+                currentTimeIndex = parseInt(savedTimeIndex);
+                updateSunPosition();
+            }
+
+            // Get saved in-game date components
+            const savedDay = getCookie('inGameDay');
+            const savedWeek = getCookie('inGameWeek');
+            const savedMonth = getCookie('inGameMonth');
+            const savedYear = getCookie('inGameYear');
+            
+            // Set input fields and display area with saved values
+            document.getElementById('inputDay').value = savedDay || '';
+            document.getElementById('inputWeek').value = savedWeek || '';
+            document.getElementById('inputMonth').value = savedMonth || '';
+            document.getElementById('inputYear').value = savedYear || '';
+            
+            const submittedDate = ` ${savedDay || '-'}  ${savedWeek || '-'}  ${savedMonth || '-'}  ${savedYear || '-'}`;
+            document.getElementById('submittedDate').innerText = submittedDate;
+        }
+
+        // Initial update to position the sun correctly
+        updateSunPosition();
+    </script>
+
+</body>
+</html>
