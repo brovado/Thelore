@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Encounter Engine | Thelore</title>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script src="../assets/js/nav.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+  <style>
+    .roll-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:15px 0}.roll-slot{display:flex;flex-direction:column;gap:5px}.roll-slot input{font-size:1.4rem;text-align:center;padding:10px}.roll-actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.roll-actions button,.quick-roll{cursor:pointer;padding:9px 14px;border:1px solid var(--border-color,#999);background:var(--card-bg,#fff);border-radius:5px}.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:15px}.result-card{padding:14px;border:1px solid var(--border-color,#999);border-radius:7px;background:var(--card-bg,#fff)}.result-card h3{margin-top:0}.result-card ul{margin-bottom:0}.badge{display:inline-block;padding:3px 8px;border-radius:12px;background:#eee;margin:2px;font-size:.85rem}.reference-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.reference-grid table{width:100%;border-collapse:collapse}.reference-grid th,.reference-grid td{padding:7px;border-bottom:1px solid var(--border-color,#ddd);text-align:left}.muted{opacity:.72}.emphasis{font-weight:700}.danger-note{margin-top:12px;padding:10px;border-left:4px solid #9b3d3d}.count-4{font-size:1.05em;font-weight:700}.copy-box{font-family:monospace;white-space:pre-wrap;background:rgba(0,0,0,.04);padding:12px;border-radius:6px}
+  </style>
+</head>
+<body data-root="../" data-current="tools/travel_encounter.html">
+<header class="site-header"><div class="site-title">Thelore</div><div class="site-subtitle">Campaign Tools</div></header>
+<div class="site-body"><nav class="sidebar" id="site-nav"></nav><main class="content"><div class="content-inner">
+<header class="page-header"><h1>Travel Encounter Reference</h1><p>Turn the party's daily D12 rolls into useful ingredients. The DM decides what actually happens.</p></header>
+<div class="page-nav"><a href="index.html">Tools</a><a href="../index.html">Home</a></div>
+
+<section class="section-content">
+<h2>1. Enter Today's Rolls</h2>
+<p class="muted">Keep the familiar system: <strong>7 = non-combat encounter</strong>, <strong>12 = combat</strong>. The other results supply world details and conditions.</p>
+<div class="roll-grid" id="rollGrid"></div>
+<div class="roll-actions"><button id="analyze">Analyze Rolls</button><button id="randomize">Roll All</button><button id="clear">Clear</button></div>
+</section>
+
+<section class="section-content"><h2>2. What The Dice Are Suggesting</h2><div id="results" class="result-grid"><div class="result-card"><h3>Waiting for rolls</h3><p>Enter the party's results above. Nothing here is mandatory; this is a reference for Matthew to pull from.</p></div></div></section>
+
+<section class="section-content"><h2>3. Reference Pantry</h2><p class="muted">These are prompts, not finished encounters. Expand them as the campaign grows.</p>
+<div class="reference-grid">
+<div><h3>1–6 · Travel Details</h3><table><tbody>
+<tr><th>1</th><td>Terrain &amp; route</td></tr><tr><th>2</th><td>Wildlife &amp; natural signs</td></tr><tr><th>3</th><td>Tracks, trails &amp; signs</td></tr><tr><th>4</th><td>Objects, ruins &amp; discoveries</td></tr><tr><th>5</th><td>People, activity &amp; civilization</td></tr><tr><th>6</th><td>Local lore, oddities &amp; strange details</td></tr>
+</tbody></table></div>
+<div><h3>7 · Non-Combat Encounter</h3><table><tbody>
+<tr><th>People</th><td>Traveler, merchant, hunter, pilgrim, messenger, patrol</td></tr><tr><th>Problems</th><td>Lost, injured, delayed, searching, fleeing, asking for help</td></tr><tr><th>Opportunities</th><td>Information, trade, warning, request, invitation, rumor</td></tr><tr><th>Oddities</th><td>Stranger, unusual behavior, unexplained event, local custom</td></tr>
+</tbody></table></div>
+<div><h3>8–11 · Weather &amp; Conditions</h3><table><tbody>
+<tr><th>8</th><td>Minor / inconvenient</td></tr><tr><th>9</th><td>Noticeable / changes the feel of travel</td></tr><tr><th>10</th><td>Significant / affects plans or choices</td></tr><tr><th>11</th><td>Severe / becomes a major feature of the day</td></tr>
+<tr><th colspan="2">Pull from: rain, fog, wind, heat, cold, storms, snow, visibility, terrain conditions, unusual atmospheric events.</th></tr>
+</tbody></table></div>
+<div><h3>12 · Combat</h3><table><tbody>
+<tr><th>Threat</th><td>Monster, beast, bandits, raiders, patrol, undead, faction</td></tr><tr><th>Reason</th><td>Hunting, territory, ambush, pursuit, guarding, opportunity</td></tr><tr><th>Twist</th><td>Another party, environmental hazard, objective, mistaken identity</td></tr><tr><th>Remember</th><td>The 12 says <em>combat is on the table</em>; it does not dictate the encounter.</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section class="section-content"><h2>Multiple Results</h2><div class="reference-grid">
+<div class="result-card"><h3>1 result</h3><p>Background influence. Use it if useful.</p></div><div class="result-card"><h3>2 results</h3><p>Strong influence. Consider making the category matter to the day.</p></div><div class="result-card"><h3>3 results</h3><p>Dominant feature. This category probably deserves attention.</p></div><div class="result-card"><h3>4+ results</h3><p>Exceptional. Consider combining them into one major circumstance rather than running several separate events.</p></div>
+</div><div class="danger-note"><strong>The Dice Suggest. The DM Decides.</strong><br>Multiple results can become one thing. A pair of weather rolls might be one storm. A detail roll and a combat roll might become tracks leading into an ambush. The system provides ingredients; Matthew cooks.</div></section>
+
+<section class="section-content"><h2>DM Scratchpad</h2><textarea id="scratchpad" rows="6" style="width:100%;box-sizing:border-box" placeholder="Jot down what you are thinking... The tool does not try to write the encounter for you."></textarea></section>
+
+</div></main></div>
+<script>
+(function(){
+ const grid=document.getElementById('rollGrid');
+ for(let i=0;i<8;i++){const wrap=document.createElement('div');wrap.className='roll-slot';wrap.innerHTML='<label>Player '+(i+1)+'</label><input type="number" min="1" max="12" placeholder="D12">';grid.appendChild(wrap)}
+ const inputs=[...grid.querySelectorAll('input')];
+ const labels={detail:'Travel Details',encounter:'Non-Combat Encounter',weather:'Weather / Conditions',combat:'Combat'};
+ function category(n){if(n===7)return'encounter';if(n===12)return'combat';if(n>=8)return'weather';return'detail'}
+ function detailHint(n){return {1:'Terrain & route',2:'Wildlife & natural signs',3:'Tracks, trails & signs',4:'Objects, ruins & discoveries',5:'People, activity & civilization',6:'Local lore, oddities & strange details'}[n]}
+ function analyze(){
+  const rolls=inputs.map(i=>Number(i.value)).filter(n=>n>=1&&n<=12);const groups={detail:[],encounter:[],weather:[],combat:[]};rolls.forEach(n=>groups[category(n)].push(n));
+  const box=document.getElementById('results');
+  if(!rolls.length){box.innerHTML='<div class="result-card"><h3>No rolls yet</h3><p>Enter at least one D12 result.</p></div>';return}
+  const order=['combat','encounter','weather','detail'];box.innerHTML=order.filter(k=>groups[k].length).map(k=>{const a=groups[k];let extra='';if(k==='detail')extra='<ul>'+a.map(n=>'<li><strong>'+n+'</strong> — '+detailHint(n)+'</li>').join('')+'</ul>';else if(k==='weather')extra='<p>Pull weather/condition ideas. Highest result: <strong>'+Math.max(...a)+'</strong>.</p>';else if(k==='encounter')extra='<p>One or more non-combat encounters are suggested. Decide whether they are separate or connected.</p>';else extra='<p>At least one combat is suggested. Build the threat from the world and current circumstances.</p>';const strength=a.length>=4?'Exceptional':a.length===3?'Dominant':a.length===2?'Strong':'Background';return '<div class="result-card"><h3>'+labels[k]+' <span class="badge">'+a.length+' result'+(a.length===1?'':'s')+'</span></h3><p class="emphasis">'+strength+' influence</p>'+extra+'</div>'}).join('');
+  const summary=rolls.join(' · ');document.title='Travel Encounter — '+summary;
+ }
+ document.getElementById('analyze').onclick=analyze;
+ document.getElementById('randomize').onclick=()=>{inputs.forEach(i=>i.value=Math.floor(Math.random()*12)+1);analyze()};
+ document.getElementById('clear').onclick=()=>{inputs.forEach(i=>i.value='');document.getElementById('results').innerHTML='<div class="result-card"><h3>Waiting for rolls</h3><p>Enter the party\'s results above.</p></div>';document.title='Travel Encounter Reference'};
+ inputs.forEach(i=>i.addEventListener('change',analyze));
+ const saveKey='thelore-travel-scratchpad';const scratch=document.getElementById('scratchpad');scratch.value=localStorage.getItem(saveKey)||'';scratch.addEventListener('input',()=>localStorage.setItem(saveKey,scratch.value));
+})();
+</script>
+</body></html>
