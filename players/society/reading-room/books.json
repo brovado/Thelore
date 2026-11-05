@@ -1,0 +1,230 @@
+[
+  {
+    "id": "crowds-and-stars",
+    "title": "Where the Stars Fall Inward",
+    "kind": "Society field primer",
+    "author": "Coalescence Society · Civilian Liaison Desk",
+    "shelf": "Fieldcraft",
+    "blurb": "A practical guide to the final week of the year, written for travelers who would rather return home.",
+    "sections": [
+      [
+        "The old instruction",
+        "Every culture has its own name for the week when the heavens become uncertain. One says the ancestors return. Another says the roads are hungry. All agree on the instruction that matters: come home before the last week of the year."
+      ],
+      [
+        "A question of company",
+        "A crowded market, a town square, a caravan camp with a hundred cooking fires—these are better places to wait than a lonely watchtower. The Society advises travelers to gather, not scatter. A brave person alone in the wilderness is still alone."
+      ],
+      [
+        "The lights beneath the sky",
+        "Witnesses often describe distant stars that appear too near, as though the night has folded inward. Do not follow them. Do not mistake their beauty for an invitation. Record direction, weather, duration, and the number of witnesses, then report to the nearest lodge."
+      ],
+      [
+        "After the seventh day",
+        "The week ends. Not every visitor goes home with it. If a creature or object remains that cannot be accounted for, keep your distance and summon a Warden. Curiosity is admirable; touching the curious thing is not a reporting procedure."
+      ]
+    ],
+    "related": "The Coalescence; Coalescence Society",
+    "inspiration": "Original Coalescence lore and Golden Line premise"
+  },
+  {
+    "id": "the-road-without-people",
+    "title": "The Road Without People",
+    "kind": "Society safety circular",
+    "author": "Office of Remote Passage",
+    "shelf": "Fieldcraft",
+    "blurb": "Why an empty road may be more dangerous than a ruined bridge.",
+    "sections": [
+      [
+        "A map is not a guarantee",
+        "A line on a map tells you where a road once went. It does not promise a bridge remains, that water is drinkable, or that a shelter still has walls. A route can survive in ink long after it has died in the world."
+      ],
+      [
+        "Population and passage",
+        "The Society considers settlements, seasonal migrations, and abandoned stretches when judging the safety of an expedition. A route used by hundreds in harvest season may be deserted by winter. During the Coalescence, that difference is not academic."
+      ],
+      [
+        "The useful questions",
+        "Before departure, determine where the last inhabited place stands, who can send aid, how long supplies will last, and whether the destination can be reached without crossing an unpopulated region at the wrong time of year."
+      ],
+      [
+        "Margin note from an unnamed examiner",
+        "The shortest route is sometimes the longest way home."
+      ]
+    ],
+    "related": "Society field reports; World map",
+    "inspiration": "Coalescence population-density rule; Golden Line travel theme"
+  },
+  {
+    "id": "marks-on-the-metal",
+    "title": "Marks on Metal, Marks on Stone",
+    "kind": "Imported antiquarian essay",
+    "author": "Anonymous antiquarian · copied from a regional collection",
+    "shelf": "History & craft",
+    "blurb": "An essay on the little signatures that outlive the civilizations that made them.",
+    "sections": [
+      [
+        "The mark of a maker",
+        "A mason leaves a chisel mark; a smith leaves a stamp; a carpenter cuts a symbol into the underside of a beam. To the untrained eye these are scratches. To an archivist they are a family tree of workmanship."
+      ],
+      [
+        "Repetition across distance",
+        "When the same mark appears on distant objects, it may indicate trade, imitation, a shared guild, or merely the popularity of a tool. Never infer an empire from a single stamped nail."
+      ],
+      [
+        "How to make a rubbing",
+        "Record the object's location before moving it. Note orientation, material, and dimensions. Use a soft charcoal rubbing where safe, or draw the mark and record every uncertainty. A partial mark is evidence; a completed mark invented from memory is fiction."
+      ],
+      [
+        "On repairs",
+        "A repair often speaks more clearly than the original object. Different rivets, replacement stone, or a mismatched hinge can reveal who returned after the first builders were gone."
+      ]
+    ],
+    "related": "Ancient Forge; Arcane Consortium",
+    "inspiration": "Golden Line's maker marks and maintenance history, without identifying unrevealed sites"
+  },
+  {
+    "id": "water-is-a-machine",
+    "title": "Water Is a Machine",
+    "kind": "Public engineering lecture",
+    "author": "Collected lecture notes · regional hydraulic studies",
+    "shelf": "Natural philosophy",
+    "blurb": "A curious argument that rivers and reservoirs are as much infrastructure as roads.",
+    "sections": [
+      [
+        "The quiet labor of water",
+        "Water carries boats, turns wheels, nourishes fields, and steals heat from a forge. It can be a road, a tool, a boundary, and a burden—all without changing its nature."
+      ],
+      [
+        "The danger of a familiar shoreline",
+        "People build docks where the water meets the land. Their children extend the docks. Their grandchildren build new ones farther out. The old timbers become a history of retreat, preserved in mud and memory."
+      ],
+      [
+        "Heat goes somewhere",
+        "A furnace may seem to have conquered fire, but the heat must still go somewhere. A craftsman who designs only the flame and forgets the cooling has made a splendidly decorated disaster."
+      ],
+      [
+        "Archivist's annotation",
+        "When surveying ruins near a vanished watercourse, search for the route the water once took, not merely the route it takes today."
+      ]
+    ],
+    "related": "World Compendium; Ancient Forge",
+    "inspiration": "Golden Line's cooling and changing shoreline themes"
+  },
+  {
+    "id": "servants-who-never-sleep",
+    "title": "The Servants Who Never Sleep",
+    "kind": "Philosophical dialogue",
+    "author": "Attributed to a traveling lecturer; attribution disputed",
+    "shelf": "Natural philosophy",
+    "blurb": "A short debate on constructs, obedience, and the difference between maintenance and judgment.",
+    "sections": [
+      [
+        "The apprentice",
+        "If a golem can mend a wall, why should any mason work?"
+      ],
+      [
+        "The master",
+        "Because the golem knows the wall must stand. The mason knows why it stands there."
+      ],
+      [
+        "The apprentice",
+        "Then teach the golem why."
+      ],
+      [
+        "The master",
+        "And when the reason changes? The master points to a gate repaired so many times it can no longer open. A perfect repair, repeated without understanding, has made the gate useless."
+      ],
+      [
+        "Final note",
+        "A mechanism can continue a task long after the purpose of the task has been forgotten. This is not always loyalty. Sometimes it is merely endurance."
+      ]
+    ],
+    "related": "Arcane Consortium; ancient constructs",
+    "inspiration": "Golden Line automation/golem themes"
+  },
+  {
+    "id": "the-guild-and-the-measure",
+    "title": "The Guild and the Measure",
+    "kind": "Traveling craftsman's notebook",
+    "author": "A wandering surveyor · name omitted in surviving copy",
+    "shelf": "History & craft",
+    "blurb": "A craftsman's meditation on how a road survives only when strangers agree on its measurements.",
+    "sections": [
+      [
+        "A quarrel over an inch",
+        "Two workshops each built an excellent wheel. Both wheels were round. Neither fit the other's axle. Their masters argued for a season, until a third workshop made a ruler and sold it to both."
+      ],
+      [
+        "The value of a standard",
+        "A common measure is a promise between people who may never meet. The traveler who repairs a wagon a hundred leagues from home depends on that promise."
+      ],
+      [
+        "The cost of cleverness",
+        "Every master believes their improvement is obvious. Put a dozen improvements together and the machine may become impossible to mend. A guild's finest achievement is sometimes persuading its members to stop improving a thing long enough for everyone else to use it."
+      ],
+      [
+        "Last entry",
+        "Before copying a pattern, ask whether it was drawn for building, repairing, or destroying. All three may look alike in the wrong light."
+      ]
+    ],
+    "related": "Factions; World Compendium",
+    "inspiration": "Golden Line craftsmanship and shared infrastructure themes"
+  },
+  {
+    "id": "dawning-silence",
+    "title": "Dawning Silence",
+    "kind": "Expedition chronicle · abridged",
+    "author": "Horizon Walkers · archival synopsis",
+    "shelf": "Past expeditions",
+    "blurb": "An older team's first investigation into forgotten lines of magical force.",
+    "sections": [
+      [
+        "The commission",
+        "The Horizon Walkers were sent south to inspect a region where old maps disagreed with new instruments. No village reported trouble. The concern began with measurements that refused to remain still."
+      ],
+      [
+        "The expedition",
+        "Their surveyors followed faint signs of dormant magical currents, taking readings at dawn and dusk. At several sites the instruments recorded a disturbance while the sky remained perfectly clear."
+      ],
+      [
+        "What the record establishes",
+        "The team reported a previously unmapped network of ley-line activity. They did not claim to understand its purpose. Later archivists have offered competing interpretations of the measurements."
+      ],
+      [
+        "Archivist's caution",
+        "This is an abridged account of a chronicle named in the original Society collection. It should not be read as proof that every later theory about the Horizon Walkers is correct."
+      ]
+    ],
+    "related": "Horizon Walkers; Coalescence Society",
+    "inspiration": "Original vault: Chronicles of the Horizon Walkers — Dawning Silence"
+  },
+  {
+    "id": "the-quiet-after",
+    "title": "The Quiet After",
+    "kind": "Society records office memorandum",
+    "author": "Compiled for incoming field members",
+    "shelf": "Society procedure",
+    "blurb": "A meditation on the value of writing down what happens after the excitement ends.",
+    "sections": [
+      [
+        "The missing hour",
+        "An expedition returns with a marvelous artifact, a broken shield, and three contradictory stories. The official report describes the artifact. It says nothing of the hour spent arguing whether the bridge could bear the party's weight. The next team loses two horses on that bridge."
+      ],
+      [
+        "What belongs in a report",
+        "Write down the road that failed, the witness who changed their mind, the meal that made someone ill, the warning ignored, and the small kindness that opened a door. A report is not a ballad. Its duty is to the person who follows."
+      ],
+      [
+        "Certainty and rumor",
+        "Mark what you saw. Mark what someone told you. Mark what you merely suspect. The difference may someday save a stranger's life."
+      ],
+      [
+        "The closing instruction",
+        "If you returned safely, make your knowledge useful. If you did not, let your record return in your place."
+      ]
+    ],
+    "related": "Official expedition report; Coalescence Society",
+    "inspiration": "Society archive and report framework; original creative composition"
+  }
+]
