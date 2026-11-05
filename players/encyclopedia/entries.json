@@ -3,14 +3,16 @@
     "id": "jugols-rest",
     "name": "Jugol's Rest",
     "type": "place",
-    "summary": "The campaign's home city: an ancient settlement much larger than its present population requires.",
-    "description": "A city of old infrastructure, active factions, and rediscovered mysteries. Its districts contain places of worship, markets, scholarly institutions, and the Coalescence Society's local lodge.",
+    "summary": "An ancient pilgrimage city in the Central Wildlands, renowned for sacred Elvenbrew coffee and its ties to the first elves.",
+    "description": "Near the east coast of Africa, Jugol's Rest draws pilgrims seeking visions and connection to ancient elven traditions. Sacred hyenas are honored as guardians; the evening Feast of the Guardians and the spring Festival of Rebirth are local traditions. Elvenbrew coffee is cultivated here and used in dawn ceremonies. The city's ancient infrastructure and factions played a central role in Chapter One.",
     "image": null,
     "related": [
       "northern-docks",
       "verdant-grove",
       "coalescence-society",
-      "ancient-forge"
+      "ancient-forge",
+      "elvenbrew",
+      "sacred-hyenas"
     ],
     "source": "Original world information; Chapter 1",
     "visibility": "public"
@@ -440,6 +442,54 @@
     "type": "place",
     "summary": "A monarchy known for spirituality, artisans and trade.",
     "description": "Original records name Maharaja Arjun Suryavata and capital Brampound.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "elvenbrew",
+    "name": "Elvenbrew",
+    "type": "lore",
+    "summary": "A sacred coffee cultivated at Jugol's Rest.",
+    "description": "The original world record describes a unique coffee plant associated with the ancient elves. Its ceremonial preparation is believed to encourage spiritual awareness and prophetic visions.",
+    "image": null,
+    "related": [
+      "jugols-rest"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "sacred-hyenas",
+    "name": "Sacred Hyenas",
+    "type": "lore",
+    "summary": "Revered guardians of Jugol's Rest.",
+    "description": "Locals and pilgrims regard the hyenas as sacred protectors. The Feast of the Guardians is an evening offering; some shamans and druids interpret their behavior as omens.",
+    "image": null,
+    "related": [
+      "jugols-rest"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "longong-university",
+    "name": "Longong University",
+    "type": "place",
+    "summary": "A major center of magical education in the Mageocracy of Longong.",
+    "description": "Known for five colleges, research, magical dueling, potion brewing, and elemental arts.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "skyward-fleet",
+    "name": "Skyward Fleet",
+    "type": "lore",
+    "summary": "Elemental-powered airships connecting cities and trade hubs.",
+    "description": "Original records describe passenger and cargo airships operated by House Lyrandar, with a main port at Aetherhaven.",
     "image": null,
     "related": [],
     "source": "Original world information",
