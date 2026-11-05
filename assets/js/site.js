@@ -67,11 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(css);
   const routes = [
     ["Home","players/index.html"],
+    ["Encyclopedia","players/encyclopedia/index.html"],
+    ["Map","players/map/index.html"],
     ["Chronicle","players/chapters/chapter-1.html"],
-    ["Characters","players/characters.html"],
-    ["World","players/world/overview.html"],
-    ["Factions","players/factions/index.html"],
-    ["Field Tools","players/tools/index.html"]
+    ["Party","players/characters.html"],
+    ["Tools","players/tools/index.html"]
   ];
   const header=document.createElement("header");
   header.className="codex-header";
