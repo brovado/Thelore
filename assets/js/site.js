@@ -54,3 +54,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+/* Shared player-facing shell: one navigation, independent of legacy page markup. */
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+  if (!/\/players\//.test(path)) return;
+  document.body.classList.add("thelore-player");
+  const prefix = path.substring(0,path.indexOf("/players/")+1);
+  const css = document.createElement("link");
+  css.rel = "stylesheet"; css.href = prefix+"assets/css/player-codex.css";
+  document.head.appendChild(css);
+  const routes = [
+    ["Home","players/index.html"],
+    ["Chronicle","players/chapters/chapter-1.html"],
+    ["Characters","players/characters.html"],
+    ["World","players/world/overview.html"],
+    ["Factions","players/factions/index.html"],
+    ["Field Tools","players/tools/index.html"]
+  ];
+  const header=document.createElement("header");
+  header.className="codex-header";
+  const top=document.createElement("div");top.className="codex-top";
+  const brand=document.createElement("a");brand.className="codex-brand";brand.href=prefix+"players/index.html";
+  brand.innerHTML="<small>THE WORLD OF</small>THELORE";top.appendChild(brand);
+  const menu=document.createElement("button");menu.className="codex-menu-button";menu.type="button";menu.textContent="☰ Menu";menu.setAttribute("aria-expanded","false");menu.setAttribute("aria-label","Toggle navigation");top.appendChild(menu);
+  const nav=document.createElement("nav");nav.className="codex-links";nav.setAttribute("aria-label","Player navigation");
+  routes.forEach(([label,url])=>{
+    const a=document.createElement("a");a.href=prefix+url;a.textContent=label;
+    const normalized=path.replace(/\/$/,"/index.html");
+    if(normalized===new URL(a.href).pathname) a.setAttribute("aria-current","page");
+    nav.appendChild(a);
+  });
+  menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});
+  top.appendChild(nav);header.appendChild(top);document.body.insertBefore(header,document.body.firstChild);
+  const footer=document.createElement("footer");footer.className="codex-footer";
+  footer.textContent="THELORE  ·  An adventurer's record  ·  Knowledge grows through play";
+  document.body.appendChild(footer);
+});
