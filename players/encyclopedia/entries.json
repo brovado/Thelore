@@ -1,0 +1,448 @@
+[
+  {
+    "id": "jugols-rest",
+    "name": "Jugol's Rest",
+    "type": "place",
+    "summary": "The campaign's home city: an ancient settlement much larger than its present population requires.",
+    "description": "A city of old infrastructure, active factions, and rediscovered mysteries. Its districts contain places of worship, markets, scholarly institutions, and the Coalescence Society's local lodge.",
+    "image": null,
+    "related": [
+      "northern-docks",
+      "verdant-grove",
+      "coalescence-society",
+      "ancient-forge"
+    ],
+    "source": "Original world information; Chapter 1",
+    "visibility": "public"
+  },
+  {
+    "id": "northern-docks",
+    "name": "Northern Docks",
+    "type": "district",
+    "summary": "Jugol's Rest's primary port and waterfront district.",
+    "description": "Trade and transportation by water sustain a lively area of businesses, travelers, and dock workers.",
+    "image": null,
+    "related": [
+      "jugols-rest",
+      "riverside-tavern",
+      "coalescence-lodge"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "riverside-tavern",
+    "name": "Riverside Tavern",
+    "type": "building",
+    "summary": "A lively gathering place for travelers and dock workers.",
+    "description": "Known for food and company near the Northern Docks.",
+    "image": null,
+    "related": [
+      "northern-docks"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "coalescence-lodge",
+    "name": "Coalescence Lodge",
+    "type": "building",
+    "summary": "Local headquarters and information point for the Coalescence Society.",
+    "description": "A place to seek information and support regarding the annual Coalescence.",
+    "image": null,
+    "related": [
+      "northern-docks",
+      "coalescence-society"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "verdant-grove",
+    "name": "Verdant Grove",
+    "type": "district",
+    "summary": "A green sanctuary within Jugol's Rest.",
+    "description": "Associated with the Verdant Enclave. Gruxx retired from adventuring to work here with the sage.",
+    "image": "assets/img/Verdant Grove 2.png",
+    "related": [
+      "jugols-rest",
+      "verdant-enclave",
+      "gruxx",
+      "sage-greenleaf"
+    ],
+    "source": "Original campaign notes; DM confirmation",
+    "visibility": "public"
+  },
+  {
+    "id": "heart-district",
+    "name": "Heart District",
+    "type": "district",
+    "summary": "The historic civic and cultural heart of Jugol's Rest.",
+    "description": "Original district notes describe old stone buildings and the city's public institutions. Specific sites are being reconciled against session records.",
+    "image": "assets/img/Heart District 1.png",
+    "related": [
+      "jugols-rest",
+      "radiant-order"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "arcane-quarter",
+    "name": "Arcane Quarter",
+    "type": "district",
+    "summary": "A district associated with magical study and research.",
+    "description": "Home to the city's arcane interests and the Arcane Consortium.",
+    "image": "assets/img/Arcane District.png",
+    "related": [
+      "jugols-rest",
+      "arcane-consortium"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "market-ward",
+    "name": "Market Ward",
+    "type": "district",
+    "summary": "The busy commercial district of Jugol's Rest.",
+    "description": "Trade, markets, taverns and merchants make this a natural place to seek supplies and rumors.",
+    "image": null,
+    "related": [
+      "jugols-rest",
+      "shadow-syndicate"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "grand-cathedral",
+    "name": "Grand Cathedral of Dawn",
+    "type": "building",
+    "summary": "A major place of worship associated with the Radiant Order.",
+    "description": "The old city notes place the cathedral in the Heart District.",
+    "image": null,
+    "related": [
+      "heart-district",
+      "radiant-order"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "council-hall",
+    "name": "Council Hall",
+    "type": "building",
+    "summary": "A seat of civic deliberation in Jugol's Rest.",
+    "description": "The old city notes describe it as the center of political activity.",
+    "image": null,
+    "related": [
+      "heart-district"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "eternal-flame-theatre",
+    "name": "Eternal Flame Theatre",
+    "type": "building",
+    "summary": "A venue for performance and artistic expression.",
+    "description": "The old city notes associate it with the Flame Seekers.",
+    "image": null,
+    "related": [
+      "heart-district",
+      "flame-seekers"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "world-tree-sanctuary",
+    "name": "World Tree Sanctuary",
+    "type": "building",
+    "summary": "A sacred sanctuary within the Verdant Grove.",
+    "description": "A place for meditation and rituals associated with the Verdant Enclave.",
+    "image": null,
+    "related": [
+      "verdant-grove",
+      "verdant-enclave"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "elders-hall",
+    "name": "Elders' Hall",
+    "type": "building",
+    "summary": "A gathering place for the Verdant Enclave's elders.",
+    "description": "The old notes describe it as a council and meeting hall.",
+    "image": null,
+    "related": [
+      "verdant-grove",
+      "verdant-enclave"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "riverfront-bazaar",
+    "name": "Riverfront Bazaar",
+    "type": "building",
+    "summary": "A busy marketplace known for varied goods.",
+    "description": "A public commercial gathering point in the Market Ward.",
+    "image": null,
+    "related": [
+      "market-ward"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "gilded-coin",
+    "name": "The Gilded Coin",
+    "type": "building",
+    "summary": "A tavern with ties to the Shadow Syndicate.",
+    "description": "Known in old city notes as a meeting place for syndicate members.",
+    "image": null,
+    "related": [
+      "market-ward",
+      "shadow-syndicate"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "arcane-spire",
+    "name": "Arcane Spire",
+    "type": "building",
+    "summary": "The Arcane Consortium's scholarly headquarters.",
+    "description": "An institution devoted to magical research and education.",
+    "image": null,
+    "related": [
+      "arcane-quarter",
+      "arcane-consortium"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "alchemists-guildhall",
+    "name": "Alchemists' Guildhall",
+    "type": "building",
+    "summary": "A center for potion brewing and alchemical research.",
+    "description": "Associated with the Arcane Consortium in the original city notes.",
+    "image": null,
+    "related": [
+      "arcane-quarter",
+      "arcane-consortium"
+    ],
+    "source": "Original world information — recovered draft",
+    "visibility": "public"
+  },
+  {
+    "id": "coalescence-society",
+    "name": "Coalescence Society",
+    "type": "faction",
+    "summary": "A global organization that responds to planar breaches and the annual Coalescence.",
+    "description": "Its newest local chapter operates in Jugol's Rest. The Society protects the Forge and is taking operational responsibility for investigating the ancient railroad.",
+    "image": null,
+    "related": [
+      "coalescence-lodge",
+      "kaelith-silverwind",
+      "ancient-forge"
+    ],
+    "source": "Original lore; Chapter 2 DM confirmation",
+    "visibility": "public"
+  },
+  {
+    "id": "arcane-consortium",
+    "name": "Arcane Consortium",
+    "type": "faction",
+    "summary": "Scholars and practitioners concerned with arcane knowledge and infrastructure.",
+    "description": "An established organization with a presence in Jugol's Rest.",
+    "image": null,
+    "related": [
+      "arcane-quarter",
+      "arcane-spire"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "radiant-order",
+    "name": "Radiant Order",
+    "type": "faction",
+    "summary": "Faith-led protectors with a strong civic presence.",
+    "description": "Known for guardianship, worship, and public service.",
+    "image": null,
+    "related": [
+      "grand-cathedral"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "verdant-enclave",
+    "name": "Verdant Enclave",
+    "type": "faction",
+    "summary": "Stewards of nature and its balance.",
+    "description": "Associated with the Verdant Grove and its sanctuaries.",
+    "image": null,
+    "related": [
+      "verdant-grove",
+      "world-tree-sanctuary"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "flame-seekers",
+    "name": "Flame Seekers",
+    "type": "faction",
+    "summary": "An organization involved in expeditions and cultural activity.",
+    "description": "Associated with the Eternal Flame Theatre in early city records.",
+    "image": null,
+    "related": [
+      "eternal-flame-theatre"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "shadow-syndicate",
+    "name": "Shadow Syndicate",
+    "type": "faction",
+    "summary": "A network of brokers, merchants and less-public operators.",
+    "description": "Known for connections within the city's commercial and undercity networks.",
+    "image": null,
+    "related": [
+      "gilded-coin"
+    ],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "embered-circle",
+    "name": "Embered Circle",
+    "type": "faction",
+    "summary": "A faction among the organizations active in the campaign.",
+    "description": "Its history and public role will be expanded from the original faction notes.",
+    "image": null,
+    "related": [
+      "jugols-rest"
+    ],
+    "source": "Original faction roster",
+    "visibility": "public"
+  },
+  {
+    "id": "kaelith-silverwind",
+    "name": "Kaelith Silverwind",
+    "type": "person",
+    "summary": "A known representative of the Coalescence Society.",
+    "description": "Associated with the Society's local presence. More details will be added from original NPC records.",
+    "image": "assets/img/Kaelith.png",
+    "related": [
+      "coalescence-society",
+      "jugols-rest"
+    ],
+    "source": "Original campaign character records",
+    "visibility": "public"
+  },
+  {
+    "id": "sage-greenleaf",
+    "name": "Alchemist Sage Greenleaf",
+    "type": "person",
+    "summary": "An alchemist and sage known to the adventurers.",
+    "description": "Connected to Rufus's history. Details of the sage's role will be expanded from original notes.",
+    "image": "assets/img/Alchemist Sage Greenleaf.png",
+    "related": [
+      "verdant-grove"
+    ],
+    "source": "Original character records",
+    "visibility": "public"
+  },
+  {
+    "id": "thorn-ironshield",
+    "name": "Captain Thorn Ironshield",
+    "type": "person",
+    "summary": "A named captain from the original campaign records.",
+    "description": "Public role and relationships await verification against the original NPC notes.",
+    "image": "assets/img/Thorn  Ironshield.png",
+    "related": [
+      "jugols-rest"
+    ],
+    "source": "Original campaign image directory",
+    "visibility": "public"
+  },
+  {
+    "id": "gruxx",
+    "name": "Gruxx",
+    "type": "person",
+    "summary": "A former adventuring companion who settled in the Verdant Grove.",
+    "description": "Retired from the party to work with the sage; Adrian Sharpe continued in his place.",
+    "image": null,
+    "related": [
+      "verdant-grove"
+    ],
+    "source": "DM confirmation",
+    "visibility": "public"
+  },
+  {
+    "id": "ancient-forge",
+    "name": "The Ancient Forge",
+    "type": "lore",
+    "summary": "A dormant ancient system accidentally reawakened by the party.",
+    "description": "Its activation illuminated a connected transit board, though the destinations remained inaccessible. The Coalescence Society established a protective barrier.",
+    "image": null,
+    "related": [
+      "jugols-rest",
+      "coalescence-society"
+    ],
+    "source": "Chapter 1 confirmed recap",
+    "visibility": "public"
+  },
+  {
+    "id": "xandria",
+    "name": "Empire of Xandria",
+    "type": "place",
+    "summary": "A powerful theocratic empire in the wider world.",
+    "description": "Original world records name High Inquisitor Marcus Valen as leader and Dodbrigh as capital. Worship of Xandues is central to its public identity.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "sumaq",
+    "name": "Cartel Confederacy of Sumaq",
+    "type": "place",
+    "summary": "A confederacy organized around powerful trade families.",
+    "description": "Original records name Don Ignacio Valverde as leader and Vr'naar as capital.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "zhaolingy",
+    "name": "Harmonious Republic of Zhaolingy",
+    "type": "place",
+    "summary": "A cosmopolitan confederacy of innovative city-states.",
+    "description": "Original records name Chancellor Mei Lian and capital Cleolesbu.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  },
+  {
+    "id": "iqar",
+    "name": "Celestial Sultanate of Iqar",
+    "type": "place",
+    "summary": "A monarchy known for spirituality, artisans and trade.",
+    "description": "Original records name Maharaja Arjun Suryavata and capital Brampound.",
+    "image": null,
+    "related": [],
+    "source": "Original world information",
+    "visibility": "public"
+  }
+]
