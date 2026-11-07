@@ -72,7 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ["Society Archives","players/society/index.html"],
     ["Chapter II","players/chapters/chapter-2-hub.html"],
     ["Explore","players/world/atlas.html"],
-    ["Party","players/characters.html"]
+    ["Character Guide","players/new-character.html"],
+    ["Catch Up","players/chapters/chapter-1.html"]
   ];
   const header=document.createElement("header");
   header.className="codex-header";
